@@ -10,7 +10,7 @@ else:
     print("Jedi, you will never be.")
 
 # Bad indent?
-# Mising colon
+# Missing colon
 # Missing paren
 # changed elif to else
 
