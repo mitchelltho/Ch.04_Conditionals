@@ -57,4 +57,21 @@ if answer.isdigit() and 7200 <= int(answer) <= 7920:
 else:
     questions += 1
     print("\033[1;31;49m Incorrect")
-    print("\033[1;31;49m The answer was anywhere between 7200 and 7920")
+    print("\033[1;31;49m The answer was anywhere between 7200 and 7920 seconds")
+
+answer = input("\033[1;38;49m Where is Jabba the Hutt's palace located ")
+if
+
+print("Your score is: " + str(correct) + "/" + str(questions))
+print("You got " + str((correct / questions) * 100) + "%")
+totalgrade = (correct / questions) * 100
+if totalgrade >= 90:
+    print("Your grade is an A")
+elif totalgrade >= 80:
+    print("Your grade is a B")
+elif totalgrade >= 70:
+    print("Your grade is a C")
+elif totalgrade >= 60:
+    print("Your grade is a D")
+else:
+    print("Your grade is an F")
