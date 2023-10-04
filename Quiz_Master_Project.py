@@ -28,7 +28,7 @@ else:
     print("\033[1;31;49m Incorrect")
     print("\033[1;31;49m The answer is: Star Wars: From The Adventures of Luke Skywalker, Released in November 1976")
 
-answer = input("\033[1;38;49m What was the real name of the baby yoda from The Mandalorian A. Greg \n"
+answer = input("\033[1;38;49m What was the real name of the baby yoda from The Mandalorian\nA. Greg \n"
                "B. Grogu \nC. George \n").upper()
 if answer == "B" or answer == "GROGU":
     correct += 1
@@ -59,10 +59,27 @@ else:
     print("\033[1;31;49m Incorrect")
     print("\033[1;31;49m The answer was anywhere between 7200 and 7920 seconds")
 
-answer = input("\033[1;38;49m Where is Jabba the Hutt's palace located ")
-if
+answer = input("\033[1;38;49m Where is Jabba the Hutt's palace located ").upper()
+if answer == str("TATOOINE").upper():
+    questions += 1
+    correct += 1
+    print("\033[1;32;49m Correct")
+else:
+    questions += 1
+    print("\033[1;31;49m Incorrect")
+    print("\033[1;31;49m The answer was Tatooine")
 
-print("Your score is: " + str(correct) + "/" + str(questions))
+answer = input("\033[1;38;49m Who built C-3PO\nA. Princess Leia\nB. Han Solo\nC. Anakin Skywalker \n").upper()
+if answer == "C" or answer == "ANAKIN" or answer == "ANAKIN SKYWALKER":
+    questions += 1
+    correct += 1
+    print("\033[1;32;49m Correct")
+else:
+    questions += 1
+    print("\033[1;31;49m Incorrect")
+    print("\033[1;31;49m The answer was Anakin Skywalker")
+
+print("\033[1;32;49m Your score is: " + str(correct) + "/" + str(questions))
 print("You got " + str((correct / questions) * 100) + "%")
 totalgrade = (correct / questions) * 100
 if totalgrade >= 90:
